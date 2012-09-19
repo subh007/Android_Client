@@ -55,6 +55,7 @@ public class Client implements Runnable{
 		}
 		catch (ConnectException e) {
 			// TODO: handle exception
+			e.printStackTrace();
 			handler.sendMessage(handler.obtainMessage(10, "server is not running"))	;
            
 		}
